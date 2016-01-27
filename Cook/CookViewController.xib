@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CookViewController">
+            <connections>
+                <outlet property="searchClick" destination="kfV-mu-rhC" id="bhI-7n-0oy"/>
+                <outlet property="tableView" destination="cds-oK-YPI" id="wWX-td-EB2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Hb-sL-oSp">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="掌厨-全球最大的视频厨房" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cez-rH-Nl3">
+                            <rect key="frame" x="14" y="35" width="207" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfV-mu-rhC">
+                            <rect key="frame" x="303" y="29" width="64" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="Kgs-l7-1ds"/>
+                                <constraint firstAttribute="width" constant="64" id="bkG-s6-cOu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="搜索">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="searchClick:" destination="-1" eventType="touchUpInside" id="Emk-g4-Lj7"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="kfV-mu-rhC" secondAttribute="bottom" constant="3" id="1bb-5h-Oe0"/>
+                        <constraint firstAttribute="trailing" secondItem="kfV-mu-rhC" secondAttribute="trailing" constant="8" id="LjV-sb-OtE"/>
+                        <constraint firstAttribute="height" constant="64" id="deV-ms-E2q"/>
+                        <constraint firstItem="kfV-mu-rhC" firstAttribute="top" secondItem="5Hb-sL-oSp" secondAttribute="top" constant="29" id="rkR-h8-oUW"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="1bb-5h-Oe0"/>
+                        </mask>
+                    </variation>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="cds-oK-YPI">
+                    <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.57121463829999997" green="1" blue="0.1000971111" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="cds-oK-YPI" secondAttribute="bottom" constant="49" id="DqF-FQ-K40"/>
+                <constraint firstAttribute="trailing" secondItem="5Hb-sL-oSp" secondAttribute="trailing" id="GdO-Ji-3wE"/>
+                <constraint firstAttribute="trailing" secondItem="cds-oK-YPI" secondAttribute="trailing" id="R0L-Id-OBk"/>
+                <constraint firstItem="5Hb-sL-oSp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VKW-3N-315"/>
+                <constraint firstItem="cds-oK-YPI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ww3-K4-hsQ"/>
+                <constraint firstItem="cds-oK-YPI" firstAttribute="top" secondItem="5Hb-sL-oSp" secondAttribute="bottom" id="g0V-kc-M5f"/>
+                <constraint firstItem="5Hb-sL-oSp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nU0-AK-Kho"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="497.5" y="402.5"/>
+        </view>
+        <visualEffectView opaque="NO" contentMode="scaleToFill" id="JtX-Xb-NS0">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="P8U-Kp-D3z">
+                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            </view>
+            <blurEffect style="light"/>
+        </visualEffectView>
+    </objects>
+</document>
